@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Weltweiter mobiler Datenverkehr ohne Fixed Wireless Access: die Werte für 2024 und 2025 sowie Ericssons Prognose für 2031.">
+  <title>Mobiler Datenverkehr weltweit – Technik in Zahlen</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+      color: #17263c;
+      background: #fff;
+      --muted: #475569;
+      --blue: #2563eb;
+      --line: #e6edf5;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    .page {
+      max-inline-size: 65.625rem;
+      margin-inline: auto;
+      padding: 1.5rem clamp(1rem, 4vw, 2.5rem) 3rem;
+    }
+    .masthead {
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 1.125rem;
+      font-weight: 850;
+      letter-spacing: .03em;
+    }
+    .masthead span { color: var(--blue); margin-inline-end: .25rem; }
+    article { max-inline-size: 51rem; padding-top: clamp(1.75rem, 5vw, 3rem); }
+    p { margin: 0; color: var(--muted); line-height: 1.55; }
+    .category {
+      color: #1d4ed8;
+      font-size: .875rem;
+      font-weight: 800;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+    h1 {
+      max-inline-size: 43rem;
+      margin: .5rem 0 .875rem;
+      font-size: clamp(2rem, 6vw, 3.375rem);
+      line-height: 1.08;
+      letter-spacing: -.045em;
+      overflow-wrap: break-word;
+    }
+    .stat {
+      margin-block: 1.5rem;
+      padding: clamp(1rem, 4vw, 1.75rem);
+      border-radius: 1.375rem;
+      background: #f3f7fd;
+    }
+    .number {
+      display: block;
+      color: #17263c;
+      font-size: clamp(2.75rem, 8vw, 4.125rem);
+      font-weight: 850;
+      line-height: 1.05;
+      letter-spacing: -.05em;
+    }
+    figure { margin: 1.625rem 0 0; }
+    figcaption { font-weight: 750; }
+    figcaption span {
+      display: block;
+      margin-top: .2rem;
+      color: var(--muted);
+      font-size: .875rem;
+      font-weight: 400;
+    }
+    .bars {
+      list-style: none;
+      padding: 0;
+      margin: .875rem 0 0;
+    }
+    .bars li + li { margin-top: .875rem; }
+    .bar-label {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: .25rem .75rem;
+      align-items: baseline;
+      font-size: .9375rem;
+      font-variant-numeric: tabular-nums;
+    }
+    .bar-label small {
+      margin-inline-start: .35rem;
+      color: var(--muted);
+      font-size: .875rem;
+    }
+    .track {
+      display: block;
+      margin-top: .25rem;
+      border-radius: .3rem;
+      background: #e1eaf7;
+    }
+    .bar {
+      display: block;
+      min-block-size: 1.125rem;
+      inline-size: var(--share);
+      border: 2px solid var(--blue);
+      border-radius: .3rem;
+      background: var(--blue);
+    }
+    .forecast .bar {
+      border-style: dashed;
+      border-color: #1d4ed8;
+      background: #dbeafe;
+    }
+    .scale {
+      display: flex;
+      justify-content: space-between;
+      margin-top: .25rem;
+      color: var(--muted);
+      font-size: .875rem;
+    }
+    .takeaway {
+      margin-top: 1.375rem;
+      padding: .75rem 1rem;
+      border-radius: .75rem;
+      background: #fff;
+    }
+    .takeaway strong { color: #17263c; }
+    .source {
+      border-top: 1px solid var(--line);
+      margin-top: 1.125rem;
+      padding-top: 1rem;
+      font-size: .9375rem;
+    }
+    a { color: #1d4ed8; text-underline-offset: .16em; }
+    a:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+    @media (forced-colors: active) {
+      .track { outline: 1px solid CanvasText; }
+      .bar { forced-color-adjust: none; background: CanvasText; border-color: CanvasText; }
+      .forecast .bar { background: Canvas; border-color: CanvasText; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead"><span aria-hidden="true">▥</span> TECHNIK IN ZAHLEN</header>
+    <main>
+      <article aria-labelledby="title">
+        <header>
+          <p class="category">Mobilfunk</p>
+          <h1 id="title">So wächst der mobile Datenverkehr weltweit</h1>
+          <p>Die Zahlen erfassen Daten über Mobilfunknetze. Ausgenommen sind Festnetzverkehr und stationäre Funkanschlüsse (Fixed Wireless Access, FWA).</p>
+        </header>
+
+        <section class="stat" aria-label="Mobiler Datenverkehr in Zahlen">
+          <p><strong class="number">146 EB</strong> pro Monat Ende 2025</p>
+
+          <figure>
+            <figcaption>
+              Weltweiter mobiler Datenverkehr ohne FWA
+              <span>Exabyte (EB) pro Monat, jeweils zum Jahresende</span>
+            </figcaption>
+            <ul class="bars" role="list">
+              <li>
+                <div class="bar-label"><span>2024</span><strong>123 EB</strong></div>
+                <span class="track" aria-hidden="true"><span class="bar" style="--share: 35.142857%"></span></span>
+              </li>
+              <li>
+                <div class="bar-label"><span>2025</span><strong>146 EB</strong></div>
+                <span class="track" aria-hidden="true"><span class="bar" style="--share: 41.714286%"></span></span>
+              </li>
+              <li class="forecast">
+                <div class="bar-label"><span>2031 <small>Prognose</small></span><strong>328 EB</strong></div>
+                <span class="track" aria-hidden="true"><span class="bar" style="--share: 93.714286%"></span></span>
+              </li>
+            </ul>
+            <div class="scale" aria-hidden="true"><span>0</span><span>350 EB</span></div>
+          </figure>
+
+          <p class="takeaway">Bis Ende 2031 könnte sich die monatliche Datenmenge gegenüber Ende 2025 mehr als verdoppeln. Das entspricht rund <strong>125&nbsp;% Zuwachs</strong>.</p>
+        </section>
+
+        <p>Ein Exabyte entspricht einer Milliarde Gigabyte.</p>
+        <footer class="source">
+          <p>Datenstand Juni 2026 · <a href="https://www.ericsson.com/49ce36/assets/local/reports-papers/mobility-report/documents/2026/ericsson-mobility-report-june-2026.pdf#page=34">Ericsson Mobility Report, S. 34 (PDF)</a> · <a href="https://www.ericsson.com/en/reports-and-papers/mobility-report/dataforecasts/key-figures">Ericssons Online-Tabelle</a></p>
+        </footer>
+      </article>
+    </main>
+  </div>
+</body>
+</html>
