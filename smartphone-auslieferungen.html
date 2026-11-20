@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Weltweite Smartphone-Auslieferungen 2025 und die IDC-Prognose für 2026.">
+  <title>Smartphone-Auslieferungen weltweit – Technik in Zahlen</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+      color: #17263c;
+      background: #fff;
+      --muted: #475569;
+      --blue: #2563eb;
+      --line: #e6edf5;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    .page {
+      max-inline-size: 65.625rem;
+      margin-inline: auto;
+      padding: 1.5rem clamp(1rem, 4vw, 2.5rem) 3rem;
+    }
+    .masthead {
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 1.125rem;
+      font-weight: 850;
+      letter-spacing: .03em;
+    }
+    .masthead span { color: var(--blue); margin-inline-end: .25rem; }
+    article { max-inline-size: 51rem; padding-top: clamp(1.75rem, 5vw, 3rem); }
+    p { margin: 0; color: var(--muted); line-height: 1.55; }
+    .category {
+      color: #1d4ed8;
+      font-size: .875rem;
+      font-weight: 800;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+    h1 {
+      max-inline-size: 43rem;
+      margin: .5rem 0 .875rem;
+      font-size: clamp(2rem, 6vw, 3.375rem);
+      line-height: 1.08;
+      letter-spacing: -.045em;
+      overflow-wrap: break-word;
+    }
+    .stat {
+      margin-block: 1.5rem;
+      padding: clamp(1rem, 4vw, 1.75rem);
+      border-radius: 1.375rem;
+      background: #f3f7fd;
+    }
+    .number {
+      display: block;
+      color: #17263c;
+      font-size: clamp(2.75rem, 8vw, 4.125rem);
+      font-weight: 850;
+      line-height: 1.05;
+      letter-spacing: -.05em;
+    }
+    figure { margin: 1.625rem 0 0; }
+    figcaption { font-weight: 750; }
+    figcaption span {
+      display: block;
+      margin-top: .2rem;
+      color: var(--muted);
+      font-size: .875rem;
+      font-weight: 400;
+    }
+    .bars {
+      list-style: none;
+      padding: 0;
+      margin: .875rem 0 0;
+    }
+    .bars li + li { margin-top: .875rem; }
+    .bar-label {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: .25rem .75rem;
+      align-items: baseline;
+      font-size: .9375rem;
+      font-variant-numeric: tabular-nums;
+    }
+    .bar-label small {
+      margin-inline-start: .35rem;
+      color: var(--muted);
+      font-size: .875rem;
+    }
+    .track {
+      display: block;
+      margin-top: .25rem;
+      border-radius: .3rem;
+      background: #e1eaf7;
+    }
+    .bar {
+      display: block;
+      min-block-size: 1.125rem;
+      inline-size: var(--share);
+      border: 2px solid var(--blue);
+      border-radius: .3rem;
+      background: var(--blue);
+    }
+    .forecast .bar {
+      border-style: dashed;
+      border-color: #1d4ed8;
+      background: #dbeafe;
+    }
+    .scale {
+      display: flex;
+      justify-content: space-between;
+      margin-top: .25rem;
+      color: var(--muted);
+      font-size: .875rem;
+    }
+    .takeaway {
+      margin-top: 1.375rem;
+      padding: .75rem 1rem;
+      border-radius: .75rem;
+      background: #fff;
+    }
+    .takeaway strong { color: #17263c; }
+    .source {
+      border-top: 1px solid var(--line);
+      margin-top: 1.125rem;
+      padding-top: 1rem;
+      font-size: .9375rem;
+    }
+    a { color: #1d4ed8; text-underline-offset: .16em; }
+    a:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+    @media (forced-colors: active) {
+      .track { outline: 1px solid CanvasText; }
+      .bar { forced-color-adjust: none; background: CanvasText; border-color: CanvasText; }
+      .forecast .bar { background: Canvas; border-color: CanvasText; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead"><span aria-hidden="true">▥</span> TECHNIK IN ZAHLEN</header>
+    <main>
+      <article aria-labelledby="title">
+        <header>
+          <p class="category">Hardware</p>
+          <h1 id="title">Weltweite Smartphone-Auslieferungen gehen laut IDC zurück</h1>
+          <p>IDC zählt ausgelieferte Smartphones. Die Zahl der Geräte, die Kundinnen und Kunden kaufen oder nutzen, wird separat erfasst.</p>
+        </header>
+
+        <section class="stat" aria-label="Smartphone-Auslieferungen in Zahlen">
+          <p><strong class="number">1,26 Mrd.</strong> weltweit ausgelieferte Smartphones im Jahr 2025</p>
+
+          <figure>
+            <figcaption>
+              Smartphone-Auslieferungen weltweit
+              <span>Milliarden Geräte pro Jahr, gerundet</span>
+            </figcaption>
+            <ul class="bars" role="list">
+              <li>
+                <div class="bar-label"><span>2025</span><strong>1,26 Mrd.</strong></div>
+                <span class="track" aria-hidden="true"><span class="bar" style="--share: 84%"></span></span>
+              </li>
+              <li class="forecast">
+                <div class="bar-label"><span>2026 <small>Prognose</small></span><strong>rund 1,05 Mrd.</strong></div>
+                <span class="track" aria-hidden="true"><span class="bar" style="--share: 70%"></span></span>
+              </li>
+            </ul>
+            <div class="scale" aria-hidden="true"><span>0</span><span>1,5 Mrd.</span></div>
+          </figure>
+
+          <p class="takeaway">IDC rechnet 2026 mit <strong>16,7&nbsp;% weniger</strong> Auslieferungen als 2025. Als Hauptgrund nennt IDC die Knappheit bei Speicherchips.</p>
+        </section>
+
+        <p>Der gerundete Wert für 2026 ergibt sich aus dem IDC-Jahreswert für 2025 und der prognostizierten Veränderung.</p>
+        <footer class="source">
+          <p>Quellen · <a href="https://www.idc.com/wp-content/uploads/2026/04/IDC-Directions-AI-Supercycle-Whalen.pdf">IDC, weltweite Auslieferungen 2025 (PDF)</a> · <a href="https://www.idc.com/resource-center/blog/smartphone-shipments-set-for-record-16-7-drop-in-2026-as-the-memory-crisis-hits-full-force/">IDC-Prognose vom 26. August 2026</a></p>
+        </footer>
+      </article>
+    </main>
+  </div>
+</body>
+</html>
