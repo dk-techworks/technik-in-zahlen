@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Weltweiter Stromverbrauch von Rechenzentren 2024 und 2025 sowie die IEA-Projektion für 2030.">
+  <title>Stromverbrauch von Rechenzentren weltweit – Technik in Zahlen</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+      color: #17263c;
+      background: #fff;
+      --muted: #475569;
+      --blue: #2563eb;
+      --line: #e6edf5;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    .page {
+      max-inline-size: 65.625rem;
+      margin-inline: auto;
+      padding: 1.5rem clamp(1rem, 4vw, 2.5rem) 3rem;
+    }
+    .masthead {
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 1.125rem;
+      font-weight: 850;
+      letter-spacing: .03em;
+    }
+    .masthead span { color: var(--blue); margin-inline-end: .25rem; }
+    article { max-inline-size: 51rem; padding-top: clamp(1.75rem, 5vw, 3rem); }
+    p { margin: 0; color: var(--muted); line-height: 1.55; }
+    .category {
+      color: #1d4ed8;
+      font-size: .875rem;
+      font-weight: 800;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+    h1 {
+      max-inline-size: 43rem;
+      margin: .5rem 0 .875rem;
+      font-size: clamp(2rem, 6vw, 3.375rem);
+      line-height: 1.08;
+      letter-spacing: -.045em;
+      overflow-wrap: break-word;
+    }
+    .stat {
+      margin-block: 1.5rem;
+      padding: clamp(1rem, 4vw, 1.75rem);
+      border-radius: 1.375rem;
+      background: #f3f7fd;
+    }
+    .number {
+      display: block;
+      color: #17263c;
+      font-size: clamp(2.75rem, 8vw, 4.125rem);
+      font-weight: 850;
+      line-height: 1.05;
+      letter-spacing: -.05em;
+    }
+    figure { margin: 1.625rem 0 0; }
+    figcaption { font-weight: 750; }
+    figcaption span {
+      display: block;
+      margin-top: .2rem;
+      color: var(--muted);
+      font-size: .875rem;
+      font-weight: 400;
+    }
+    .bars {
+      list-style: none;
+      padding: 0;
+      margin: .875rem 0 0;
+    }
+    .bars li + li { margin-top: .875rem; }
+    .bar-label {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: .25rem .75rem;
+      align-items: baseline;
+      font-size: .9375rem;
+      font-variant-numeric: tabular-nums;
+    }
+    .bar-label small {
+      margin-inline-start: .35rem;
+      color: var(--muted);
+      font-size: .875rem;
+    }
+    .track {
+      display: block;
+      margin-top: .25rem;
+      border-radius: .3rem;
+      background: #e1eaf7;
+    }
+    .bar {
+      display: block;
+      min-block-size: 1.125rem;
+      inline-size: var(--share);
+      border: 2px solid var(--blue);
+      border-radius: .3rem;
+      background: var(--blue);
+    }
+    .forecast .bar {
+      border-style: dashed;
+      border-color: #1d4ed8;
+      background: #dbeafe;
+    }
+    .scale {
+      display: flex;
+      justify-content: space-between;
+      margin-top: .25rem;
+      color: var(--muted);
+      font-size: .875rem;
+    }
+    .takeaway {
+      margin-top: 1.375rem;
+      padding: .75rem 1rem;
+      border-radius: .75rem;
+      background: #fff;
+    }
+    .takeaway strong { color: #17263c; }
+    .source {
+      border-top: 1px solid var(--line);
+      margin-top: 1.125rem;
+      padding-top: 1rem;
+      font-size: .9375rem;
+    }
+    a { color: #1d4ed8; text-underline-offset: .16em; }
+    a:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+    @media (forced-colors: active) {
+      .track { outline: 1px solid CanvasText; }
+      .bar { forced-color-adjust: none; background: CanvasText; border-color: CanvasText; }
+      .forecast .bar { background: Canvas; border-color: CanvasText; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead"><span aria-hidden="true">▥</span> TECHNIK IN ZAHLEN</header>
+    <main>
+      <article aria-labelledby="title">
+        <header>
+          <p class="category">Energie</p>
+          <h1 id="title">So viel Strom verbrauchen Rechenzentren weltweit</h1>
+          <p>Die Internationale Energieagentur (IEA) schätzt den weltweiten Stromverbrauch von Rechenzentren. Dazu zählen Server, Speicher und weitere Infrastruktur wie die Kühlung. KI-Anwendungen machen einen Teil dieses Verbrauchs aus.</p>
+        </header>
+
+        <section class="stat" aria-label="Stromverbrauch in Zahlen">
+          <p><strong class="number">485 TWh</strong> geschätzter Stromverbrauch im Jahr 2025</p>
+
+          <figure>
+            <figcaption>
+              Weltweiter Stromverbrauch von Rechenzentren
+              <span>Terawattstunden (TWh) pro Jahr</span>
+            </figcaption>
+            <ul class="bars" role="list">
+              <li>
+                <div class="bar-label"><span>2024 <small>Schätzung</small></span><strong>416 TWh</strong></div>
+                <span class="track" aria-hidden="true"><span class="bar" style="--share: 41.6%"></span></span>
+              </li>
+              <li>
+                <div class="bar-label"><span>2025 <small>Schätzung</small></span><strong>485 TWh</strong></div>
+                <span class="track" aria-hidden="true"><span class="bar" style="--share: 48.5%"></span></span>
+              </li>
+              <li class="forecast">
+                <div class="bar-label"><span>2030 <small>Basisszenario</small></span><strong>945 TWh</strong></div>
+                <span class="track" aria-hidden="true"><span class="bar" style="--share: 94.5%"></span></span>
+              </li>
+            </ul>
+            <div class="scale" aria-hidden="true"><span>0</span><span>1.000 TWh</span></div>
+          </figure>
+
+          <p class="takeaway">Im Basisszenario der IEA steigt der Jahresverbrauch von 2025 bis 2030 um rund <strong>95&nbsp;%</strong>. Das wäre fast eine Verdoppelung.</p>
+        </section>
+
+        <p>Eine Terawattstunde entspricht einer Milliarde Kilowattstunden.</p>
+        <footer class="source">
+          <p>Datenstand 2026 · <a href="https://www.iea.org/files/3179f7f8-01f6-4dd6-bffa-c9f7b73f1dc9/KeyQuestionsonEnergyandAI.pdf">IEA, Key Questions on Energy and AI, Tabelle A.4, S. 110 (PDF)</a>. Die IEA rundet den Wert für 2030 in ihrer <a href="https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary">Zusammenfassung</a> auf rund 950 TWh.</p>
+        </footer>
+      </article>
+    </main>
+  </div>
+</body>
+</html>
